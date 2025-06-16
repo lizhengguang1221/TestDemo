@@ -1,0 +1,15 @@
+.lineStyle{
+    width:4px;
+    height:200;
+    background-color: #cbcdce;
+    border-radius: 2px;
+    /* margin-right: 10px; */
+}
+ 
+.badageStyle{
+    background-color: #cbcdce;
+    width:80px;
+    height:80px;
+    rotate: 90deg;
+    border-radius: 4px;
+}
