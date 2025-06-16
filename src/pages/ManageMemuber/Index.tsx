@@ -25,7 +25,7 @@ const formItemLayout = {
 import type { TableProps } from "antd";
 
 interface DataType {
-  key: any;
+  key: string;
   name: string;
   age: number;
   sex: string;
@@ -35,21 +35,21 @@ interface DataType {
 const App: React.FC = () => {
   const [data, setData] = React.useState([
     {
-      key: 1,
+      key: "1",
       name: "用户1",
       age: 32,
       sex: "male",
       des: "2345",
     },
     {
-      key: 2,
+      key: "2",
       name: "用户2",
       age: 42,
       sex: "remale",
       des: "3435434",
     },
     {
-      key: 3,
+      key: "3",
       name: "用户3",
       age: 32,
       sex: "male",
@@ -120,7 +120,7 @@ const App: React.FC = () => {
     form.validateFields().then((values) => {
       if (type === "add") {
         const theObj = {
-          key: new Date().getTime(),
+          key: String(new Date().getTime()),
           name: values.name,
           age: values.age,
           sex: values.sex,
