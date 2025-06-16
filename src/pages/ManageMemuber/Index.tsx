@@ -35,21 +35,21 @@ interface DataType {
 const App: React.FC = () => {
   const [data, setData] = React.useState([
     {
-      key: "1",
+      key: 1,
       name: "用户1",
       age: 32,
       sex: "male",
       des: "2345",
     },
     {
-      key: "2",
+      key: 2,
       name: "用户2",
       age: 42,
       sex: "remale",
       des: "3435434",
     },
     {
-      key: "3",
+      key: 3,
       name: "用户3",
       age: 32,
       sex: "male",
@@ -73,7 +73,7 @@ const App: React.FC = () => {
       title: "性别",
       dataIndex: "sex",
       key: "sex",
-      render(value, record, index) {
+      render(value) {
         return value === "male" ? "男" : "女";
       },
     },
@@ -81,7 +81,7 @@ const App: React.FC = () => {
       title: "简介",
       key: "des",
       dataIndex: "des",
-      render(value, record, index) {
+      render(value) {
         return value || "暂无简介";
       },
     },
