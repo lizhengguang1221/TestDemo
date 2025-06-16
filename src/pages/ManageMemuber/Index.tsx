@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Button,
-  Cascader,
-  DatePicker,
   Modal,
   Popconfirm,
   Space,
@@ -10,13 +8,8 @@ import {
   Form,
   Input,
   InputNumber,
-  Mentions,
-  Segmented,
   Select,
-  TreeSelect,
 } from "antd";
-
-const { RangePicker } = DatePicker;
 
 const formItemLayout = {
   labelCol: {
@@ -32,7 +25,7 @@ const formItemLayout = {
 import type { TableProps } from "antd";
 
 interface DataType {
-  key: string;
+  key: any;
   name: string;
   age: number;
   sex: string;
